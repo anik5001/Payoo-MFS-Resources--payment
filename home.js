@@ -39,7 +39,7 @@ document
         let availableBalance = parseInt(
           document.getElementById("available-balance").innerText
         );
-        const addAmount = parseInt(document.getElementById("add-amount").value);
+        let addAmount = parseInt(document.getElementById("add-amount").value);
         if (bankNumber.length === 11 && pinAddMoney === 1234) {
           availableBalance = availableBalance + addAmount;
           document.getElementById("available-balance").innerText =
@@ -77,7 +77,7 @@ document
         let availableBalance = parseInt(
           document.getElementById("available-balance").innerText
         );
-        const cashOutAmount = parseInt(
+        let cashOutAmount = parseInt(
           document.getElementById("cash-out-amount").value
         );
         if (agentNumber.length === 11 && pinCashMoney === 1234) {
@@ -115,7 +115,7 @@ document
       let availableBalance = parseInt(
         document.getElementById("available-balance").innerText
       );
-      const transferAmount = parseInt(
+      let transferAmount = parseInt(
         document.getElementById("transfer-amount").value
       );
       if (userNumber.length === 11 && pinTransferMoney === 1234) {
@@ -183,7 +183,7 @@ document
       let availableBalance = parseInt(
         document.getElementById("available-balance").innerText
       );
-      const billPayAmount = parseInt(
+      let billPayAmount = parseInt(
         document.getElementById("bill-pay-amount").value
       );
       if (billerNumber.length === 11 && pinPayNow === 1234) {
